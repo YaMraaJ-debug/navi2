@@ -14,7 +14,6 @@ def speedtest(update, context):
     test.get_best_server()
     test.download()
     test.upload()
-    test.results.share()
     result = test.results.dict()
     path = (result['share'])
     string_speed = f'''
