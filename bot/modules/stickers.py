@@ -419,7 +419,7 @@ def stickhelp(update, context):
 • `/kang`*:* Reply to a Sticker to add it to your pack.
 • `/remove`*:* Replay to a Sticker to remove Sticker from an existing pack.
 '''
-    update.effective_message.reply_test(help_string, parse_mode=ParseMode.MARKDOWN)
+    message.reply_text(help_string, parse_mode=ParseMode.MARKDOWN)
 
 STICKERID_HANDLER = CommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = CommandHandler("getsticker", getsticker)
