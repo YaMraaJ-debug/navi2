@@ -48,7 +48,7 @@ async def mediainfo(client, message):
 <h2>Details</h2>
 <pre>{out or 'Not Supported'}</pre>
 """
-    text_ = media_type.split(".")[-1].upper()
+    text_ = media_type.split(".")[-1].capitalize()
     link = post_to_telegraph(media_type, body_text)
     markup = InlineKeyboardMarkup([[InlineKeyboardButton(text=text_, url=link)]])
     await process.edit_text("Media Info", reply_markup=markup)
