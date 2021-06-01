@@ -148,7 +148,7 @@ class MirrorListener(listeners.MirrorListeners):
 
     def onUploadComplete(self, link: str, size):
         with download_dict_lock:
-            msg = f'<b>📂 Filename: </b><code>{download_dict[self.uid].name()}</code>\n<b>Size: </b><code>{size}</code>'\n' \
+            msg = f'<b>📂 Filename: </b><code>{download_dict[self.uid].name()}</code>\n<b>Size: </b><code>{size}</code>\n' \
                   f' \n' \
                   f'📍 Join Our Team Drive To Gain Access To The G-Drive Link.\n' \
                   f'📍 Do Not Share G-Drive / Index Links Outside the Group.\n' \
