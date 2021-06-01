@@ -57,10 +57,10 @@ This bot can mirror all your links to Google drive!
 Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
 buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Join MirrorClouds Channel", "https://t.me/MirrorClouds")
-    buttons.buildbutton("🏡 Join Team Drive 🏡", "https://groups.google.com/forum/#!forum/mirrorcloud007/join")
-    reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
-    update.effective_message.reply_text(start_string)
+buttons.buildbutton("Join MirrorClouds Channel", "https://t.me/MirrorClouds")
+buttons.buildbutton("🏡 Join Team Drive 🏡", "https://groups.google.com/forum/#!forum/mirrorcloud007/join")
+reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
+update.effective_message.reply_text(start_string)
 
 
 @run_async
