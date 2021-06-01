@@ -155,7 +155,7 @@ class MirrorListener(listeners.MirrorListeners):
                   f'💫 Mirror∆Cloud Join @mirrorclouds\n' \
             buttons = button_build.ButtonMaker()
             if SHORTENER is not None and SHORTENER_API is not None:
-                surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, link)).text
+                surl = requests.get(f'https://{SHORTENER}/api?api={SHORTENER_API}&url={link}&format=text').text
                 buttons.buildbutton("☁️Drive Link☁️", surl)
             else:
                 buttons.buildbutton("☁️Drive Link☁️", link)
